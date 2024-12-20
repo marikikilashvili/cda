@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+.header {
+  height: 80px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  /* padding-right: 25px;
+  padding-left: 25px; */
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.right-elements {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.right-elements img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 5px 26px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.login {
+  width: 96px;
+  height: 29px;
+  opacity: 1;
+  background-color: white;
+  border-color: #e44d26;
+}
+
+button.register {
+  width: 96px;
+  height: 29px;
+  opacity: 1;
+  background-color: #ffe259;
+  color: white;
+}
+
+.icon {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 25px;
+}
+
+@media (max-width: 768px) {
+  .right-elements,
+  .auth-buttons {
+    display: none;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .icon {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-elements,
+  .auth-buttons {
+    display: none;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .icon {
+    display: block;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
